@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavItem} from "react-bootstrap";
 import Login from "./login";
-import CreateContact from "./createContact"
+import AddCourse from "./addCourse"
 import EditContact from "./editContact"
 import AllContact from "./allContacts"
 import DeleteContact from "./deleteContact"
@@ -12,8 +12,8 @@ import Readme from "./readMe";
 import facade from "./apiFacade";
 import ValidateRoleSite from "./validateRoleSite";
 import AdminSite from "./adminSite";
-import Hotels from "./hotels";
-import Booking from "./booking";
+import Courses from "./Courses";
+
 
 const NavBarIO = () => {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -53,6 +53,13 @@ const Header = (props) => {
                   Readme
                 </Nav.Link>
               </NavItem>   
+
+              <NavItem href="/Courses">
+              <Nav.Link as={Link} to="/Courses">
+                          Courses
+              </Nav.Link>
+              </NavItem>
+
    
               <ValidateRoleSite loggedIn={props.loggedIn} />
             </Nav>
@@ -64,6 +71,8 @@ const Header = (props) => {
                 </Nav.Link>
               </NavItem>
             </Nav>
+
+            
 
           </Navbar.Collapse>
         </Navbar>
@@ -77,13 +86,12 @@ const Content = (props) => {
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/Readme" component={Readme} />
-      <Route path="/CreateContact" component={CreateContact} />
+      <Route path="/AddCourse" component={AddCourse} />
       <Route path="/Contacts" component={AllContact} />
       <Route path="/Contact" component={Find} />
       <Route path="/EditContact" component={EditContact} />
       <Route path="/DeleteContact" component={DeleteContact} />
-      <Route path="/Hotels" component={Hotels} />
-      <Route path="/Booking" component={Booking} />
+      <Route path="/Courses" component={Courses} />
       <Route path="/AdminSite" component={AdminSite} />
     
       <Route path="/Login">

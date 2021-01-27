@@ -7,7 +7,7 @@ export const UserUrlUserCount = Site + "/user/userCount"
 
 export const DailyFunUrl = Site + "/dailyfun";
 
-export const AddContactUrl = Site + "/contact/create";
+export const AddCourseUrl = Site + "/course/add";
 
 export const GetAllContactsUrl = Site + "/contact/all";
 
@@ -19,4 +19,4 @@ export const EditContactURL = Site + "/contact/update/";
 
 export const DeleteContactUrl = Site + "/contact/delete/";
 
-export const AllHotels = Site + "/hotel/all"
+export const AllCourses = Site + "/course/all"

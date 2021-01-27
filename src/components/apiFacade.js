@@ -1,5 +1,5 @@
 import jwt_decode from "jwt-decode";
-import { Site, AddContactUrl, AddUserURL, EditContactURL} from "./../sites"
+import { Site, AddCourseUrl, AddUserURL, EditContactURL} from "./../sites"
 
 
 const URL = Site;
@@ -79,11 +79,10 @@ function ApiFacade() {
         return opts;
     }
 
-    const addContact = (name, email, company, jobtitle, phone) => {
+    const addCourse = (courseName, description) => {
 
-        const options = makeOptions("POST", true, { name: name, email: email,
-             company: company, jobtitle: jobtitle, phone: phone  })
-        return fetch(AddContactUrl, options);
+        const options = makeOptions("POST", true, { courseName: courseName, description: description})
+        return fetch(AddCourseUrl, options);
     }
 
     const editContact = (orgEmail, name, email, company, jobtitle, phone) => {
@@ -108,7 +107,7 @@ function ApiFacade() {
         fetchData,
         getUserName,
         getRoles,
-        addContact,
+        addCourse,
         addUser,
         editContact
     }

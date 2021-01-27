@@ -26,17 +26,11 @@ const UserNavigator = () => {
  </NavDropdown> */}
 
 
-<NavItem href="/Hotels">
-<Nav.Link as={Link} to="/Hotels">
-  Hotels
+<NavItem href="/Courses">
+<Nav.Link as={Link} to="/Courses">
+  Courses
 </Nav.Link>
 </NavItem>
-
-<NavItem href="/Booking">
-<Nav.Link as={Link} to="/Booking">
-  Booking
-</Nav.Link>
-</NavItem> 
 
  </Nav>
  
