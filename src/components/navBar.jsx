@@ -3,12 +3,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav, NavItem} from "react-bootstrap";
 import Login from "./login";
 import AddCourse from "./addCourse"
-import EditContact from "./editContact"
-import AllContact from "./allContacts"
-import DeleteContact from "./deleteContact"
-import Find from "./findContact"
+import EditCourse from "./editCourse"
 import Home from "./home";
-import Readme from "./readMe";
+import About from "./about";
 import facade from "./apiFacade";
 import ValidateRoleSite from "./validateRoleSite";
 import AdminSite from "./adminSite";
@@ -48,9 +45,9 @@ const Header = (props) => {
                 </Nav.Link>
               </NavItem>
 
-              <NavItem href="/Readme">
-                <Nav.Link as={Link} to="/Readme">
-                  Readme
+              <NavItem href="/About">
+                <Nav.Link as={Link} to="/About">
+                  About
                 </Nav.Link>
               </NavItem>   
 
@@ -85,12 +82,9 @@ const Content = (props) => {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/Readme" component={Readme} />
+      <Route path="/About" component={About} />
       <Route path="/AddCourse" component={AddCourse} />
-      <Route path="/Contacts" component={AllContact} />
-      <Route path="/Contact" component={Find} />
-      <Route path="/EditContact" component={EditContact} />
-      <Route path="/DeleteContact" component={DeleteContact} />
+      <Route path="/EditCourse" component={EditCourse} />
       <Route path="/Courses" component={Courses} />
       <Route path="/AdminSite" component={AdminSite} />
     

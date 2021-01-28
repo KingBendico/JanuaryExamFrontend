@@ -38,7 +38,7 @@ const AddCourse = () => {
       </Form.Group>
       <Button variant="dark" type="submit">Add Course</Button>
       </Form>
-      <p>{JSON.stringify(course)}</p>
+      {/* <p>{JSON.stringify(course)}</p> */}
       </div>
       </div>
       </div>

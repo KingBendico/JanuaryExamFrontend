@@ -5,33 +5,19 @@ import { Link } from "react-router-dom";
 const AdminNavigator = () => {
   return (
      <Nav>
-    <NavItem href="/AdminSite">
-      <Nav.Link as={Link} to="/AdminSite">
-        Admin
-      </Nav.Link>
-    </NavItem>
-
-    <NavItem href="/Courses">
-    <Nav.Link as={Link} to="/Courses">
-  Courses
-  </Nav.Link>
-  </NavItem>
  
     <NavDropdown title="Course admin tools" id="basic-nav-dropdown">
     <NavDropdown.Item as={Link} to="/AddCourse">
      Add Course
     </NavDropdown.Item>
-    <NavDropdown.Item as={Link} to="/Contacts">
-      Add Class
+    <NavDropdown.Item as={Link} to="/AddClass">
+      Add Class ((not fully working!!))
     </NavDropdown.Item>
-    <NavDropdown.Item as={Link} to="/Contact">
-      Edit Existing Courses
-    </NavDropdown.Item>
-   <NavDropdown.Item as={Link} to="/EditContact">
-      Add New Teachers
+   <NavDropdown.Item as={Link} to="/EditCourse">
+     Edit Existing Courses (not fully working!!)
  </NavDropdown.Item>
- <NavDropdown.Item as={Link} to="/DeleteContact">
-      Classes Offered
+ <NavDropdown.Item as={Link} to="/ShowClasses">
+      Classes Offered (not fully working!!)
  </NavDropdown.Item>
  </NavDropdown> 
 

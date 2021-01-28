@@ -39,6 +39,7 @@ function CoursesTable() {
   return (
    
       <Container>
+        <br></br>
         <h2>List of Courses</h2>
        <div>
           <Table striped bordered hover size="sm"> 

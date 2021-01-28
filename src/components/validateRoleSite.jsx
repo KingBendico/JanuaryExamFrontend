@@ -7,7 +7,7 @@ const ValidateRoleSite = (props) => {
   const role = facade.getRoles();
   console.log(role);
   console.log(props.nr);
-
+  
   if (role === "admin" && props.loggedIn) {
     return (
       <>
